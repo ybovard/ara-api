@@ -9,4 +9,4 @@ RUN apk update && apk upgrade && \
 RUN pip install ara[server]
 
 ENTRYPOINT ["ara-manage","runserver"] 
-CMD ["127.0.0.1:8000"]
+CMD ["0.0.0.0:8000"]
